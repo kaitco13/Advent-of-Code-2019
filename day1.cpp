@@ -15,8 +15,8 @@ int main(){
             int num = stoi(line);            
             while(num > 0){
                 num = num/3;
-                num -= 2;                  
-                if(num > 0){
+                num -= 2;                             
+                if(num > 0){ //part2 
                     subtotal += num;  
                 }                
             }
