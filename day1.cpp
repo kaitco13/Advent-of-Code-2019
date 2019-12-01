@@ -11,9 +11,9 @@ int main(){
         string line;
         while (getline(myfile,line))
         {            
-            int subtotal = 0;
+            int subtotal = 0; //part2
             int num = stoi(line);            
-            while(num > 0){
+            while(num > 0){ //part2
                 num = num/3;
                 num -= 2;                             
                 if(num > 0){ //part2 
