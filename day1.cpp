@@ -17,11 +17,9 @@ int main(){
                 num = num/3;
                 num -= 2;                  
                 if(num > 0){
-                    cout << num << " + ";
                     subtotal += num;  
                 }                
             }
-            cout << " = " << subtotal << endl;
             total += subtotal;
         }
     }
