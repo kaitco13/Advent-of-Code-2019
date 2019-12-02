@@ -9,23 +9,23 @@ using namespace std;
 int runComputer(vector<int> computer){ //pass by value so that the vector is reset each time
     int i = 0;
     while(computer[i] != 99){
-            int num;
-            if(computer[i] == 1){                
-                num = computer[computer[i+1]] + computer[computer[i+2]];
-                computer[computer[i+3]] = num;
-            }
-            else if(computer[i] == 2){
-                num = computer[computer[i+1]] * computer[computer[i+2]];
-                computer[computer[i+3]] = num;
-            }
-            else{
-                cout << "something went wrong" << endl;
-                return -1;
-            }  
-            i+=4;        
+        int num;
+        if(computer[i] == 1){                
+            num = computer[computer[i+1]] + computer[computer[i+2]];
+            computer[computer[i+3]] = num;
         }
-        //cout << "final: " << computer[0] << endl; //this line commented out for part2
-        return computer[0];
+        else if(computer[i] == 2){
+            num = computer[computer[i+1]] * computer[computer[i+2]];
+            computer[computer[i+3]] = num;
+        }
+        else{
+            cout << "something went wrong" << endl;
+            return -1;
+        }  
+        i+=4;        
+    }
+    //cout << "final: " << computer[0] << endl; //this line commented out for part2
+    return computer[0];
 }
 
 int main(){
