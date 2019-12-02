@@ -58,9 +58,8 @@ int main(){
             }
         }  
     }
-    else cout << "Unable to open file"; 
+    else cout << "Unable to open file" << endl;
     
-    cout << endl;
     myfile.close();
     return 0;
 }
